@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a simple snake game">
+    <title>Snake Game</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./game.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="score">
+            <div class="currentScore">
+                Score : <span class="crscore">0</span>
+            </div>
+            <div class="highestScore">
+                Record : <span class="hscore"></span>
+            </div>
+        </div>
+        <div class="gameover">
+            <h2>Play Again?</h2>
+            <div class="buttons">
+                <button class="yes-btn">YES</button>
+                <button class="no-btn">NO</button>
+            </div>
+
+        </div>
+        <div class="playzone">
+        </div>
+        <div class="controls">
+            <div class="ctrls" data-key="ArrowLeft"><i  class="fa-solid fa-arrow-left"></i></div>
+            <div class="ctrls" data-key="ArrowUp"><i  class="fa-solid fa-arrow-up"></i></div>
+            <div class="ctrls" data-key="ArrowDown"><i  class="fa-solid fa-arrow-down"></i></div>
+            <div class="ctrls" data-key="ArrowRight"><i  class="fa-solid fa-arrow-right"></i></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./game.js"></script>
+</body>
+
+</html>

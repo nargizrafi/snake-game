@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Handjet', cursive;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/texture2.jpg);
+    background-size: contain;
+       
+}
+.playzone{
+    width: 100vmin;
+    height: 100vmin;
+    background-image: url(./images/texture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    border: 1px solid rgb(40, 78, 40);
+}
+.snake{
+    background-image: url(./images/snake.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(1px 1px 1px black);
+}
+.food{
+    background-image: url(./images/food.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.score{
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    justify-content: space-around;
+    color: white;
+    border: 1px solid rgb(40, 78, 40);
+}
+.score>div{
+    border: 1px solid rgb(40, 78, 40);
+    background-color: #365e1b;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.7em;
+}
+.controls{
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    justify-content: space-around;
+    color: white;
+}
+.controls>div{
+    border: 1px solid rgb(40, 78, 40);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5em;
+    background-color: #365e1b;
+    cursor: pointer;
+}
+.score,.controls{
+    background-image: url(./images/texture2.jpg);
+    background-size: cover;
+    background-color: #365e1b;
+    width: 100%;
+}
+
+.gameover{
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/texture.jpg);
+    background-size: cover;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid rgb(40, 78, 40);
+}
+
+h2{
+    text-align: center;
+    font-size: 7em;
+    margin-bottom: 40px;
+    color: #153202;
+    letter-spacing: 2px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+button{
+    padding: 20px 0px;
+    width: 200px;
+    background-color: #bbe06c;
+    font-size: 3em;
+    border-radius: 20px;
+    border: 1px solid green;
+    cursor: pointer;
+    color: #142d03;
+    letter-spacing: 5px;
+    transition: 1s all;
+}
+button:hover{
+    letter-spacing: 1px;
+    background-color: #365e1b;
+    color: white;
+}
+
+@media screen and (max-width:1024px) {
+    .playzone{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .buttons{
+        gap: 10px;
+    }
+   button{
+    font-size: 2em;
+    width: 130px;
+   }
+}

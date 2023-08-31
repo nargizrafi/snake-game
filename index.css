@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Handjet', cursive;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/texture.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    font-size: 8em;
+    margin-bottom: 40px;
+    color: #153202;
+    letter-spacing: 2px;
+}
+button{
+    margin: 0 15px;
+    padding: 20px 80px;
+    background-color: #bbe06c;
+    font-size: 4.5em;
+    border-radius: 20px;
+    border: 1px solid green;
+    cursor: pointer;
+    color: #142d03;
+    letter-spacing: 7px;
+    transition: 1s all;
+}
+button:hover{
+    letter-spacing: 2px;
+    background-color: #365e1b;
+    color: white;
+}
+@media screen and (max-width:500px) {
+    button{
+        margin: 0 15px;
+        padding: 20px 40px;
+        font-size: 3.5em;
+    }
+}
